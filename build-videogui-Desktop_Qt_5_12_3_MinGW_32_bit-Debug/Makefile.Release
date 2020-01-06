@@ -100,11 +100,7 @@ compiler_rcc_make_all: release/qrc_resources.cpp
 compiler_rcc_clean:
 	-$(DEL_FILE) release\qrc_resources.cpp
 release/qrc_resources.cpp: ../videogui/resources.qrc \
-		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/bin/rcc.exe \
-		../videogui/Icons/control_pause.png \
-		../videogui/Icons/control_stop.png \
-		../videogui/Icons/control_play.png \
-		../videogui/Icons/folder_page_white.png
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/bin/rcc.exe
 	C:\Qt\Qt5.12.3\5.12.3\mingw73_32\bin\rcc.exe -name resources ..\videogui\resources.qrc -o release\qrc_resources.cpp
 
 compiler_moc_predefs_make_all: release/moc_predefs.h
@@ -223,6 +219,40 @@ release/moc_mainwindow.cpp: ../videogui/mainwindow.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtGui/qtouchdevice.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtGui/qicon.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/QMediaPlayer \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmediaplayer.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmediaobject.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qtmultimediaglobal.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qtmultimedia-config.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmultimedia.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmediacontent.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmediaresource.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtNetwork/qnetworkrequest.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtNetwork/qtnetworkglobal.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtNetwork/qtnetwork-config.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/QSharedDataPointer \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/QString \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/QUrl \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmediaenumdebug.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/qmetaobject.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qaudio.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtNetwork/qnetworkconfiguration.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimediaWidgets/QVideoWidget \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimediaWidgets/qvideowidget.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimediaWidgets/qtmultimediawidgetdefs.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmediabindableinterface.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/QFileDialog \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qfiledialog.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/qdir.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/qfileinfo.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qdialog.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/QProgressBar \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qprogressbar.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qframe.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/QSlider \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qslider.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qabstractslider.h \
 		release/moc_predefs.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/bin/moc.exe
 	C:\Qt\Qt5.12.3\5.12.3\mingw73_32\bin\moc.exe $(DEFINES) --include D:/Qt/Qt-media-player/build-videogui-Desktop_Qt_5_12_3_MinGW_32_bit-Debug/release/moc_predefs.h -IC:/Qt/Qt5.12.3/5.12.3/mingw73_32/mkspecs/win32-g++ -ID:/Qt/Qt-media-player/videogui -IC:/Qt/Qt5.12.3/5.12.3/mingw73_32/include -IC:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimediaWidgets -IC:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia -IC:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets -IC:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtGui -IC:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtANGLE -IC:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtNetwork -IC:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore -I. -IC:/Qt/Qt5.12.3/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++ -IC:/Qt/Qt5.12.3/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/i686-w64-mingw32 -IC:/Qt/Qt5.12.3/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include/c++/backward -IC:/Qt/Qt5.12.3/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include -IC:/Qt/Qt5.12.3/Tools/mingw730_32/lib/gcc/i686-w64-mingw32/7.3.0/include-fixed -IC:/Qt/Qt5.12.3/Tools/mingw730_32/i686-w64-mingw32/include ..\videogui\mainwindow.h -o release\moc_mainwindow.cpp
@@ -357,6 +387,40 @@ release/main.o: ../videogui/main.cpp ../videogui/mainwindow.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtGui/qtouchdevice.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtGui/qicon.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/QMediaPlayer \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmediaplayer.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmediaobject.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qtmultimediaglobal.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qtmultimedia-config.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmultimedia.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmediacontent.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmediaresource.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtNetwork/qnetworkrequest.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtNetwork/qtnetworkglobal.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtNetwork/qtnetwork-config.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/QSharedDataPointer \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/QString \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/QUrl \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmediaenumdebug.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/qmetaobject.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qaudio.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtNetwork/qnetworkconfiguration.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimediaWidgets/QVideoWidget \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimediaWidgets/qvideowidget.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimediaWidgets/qtmultimediawidgetdefs.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmediabindableinterface.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/QFileDialog \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qfiledialog.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/qdir.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/qfileinfo.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qdialog.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/QProgressBar \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qprogressbar.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qframe.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/QSlider \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qslider.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qabstractslider.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/QApplication \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qapplication.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/qcoreapplication.h \
@@ -473,8 +537,44 @@ release/mainwindow.o: ../videogui/mainwindow.cpp ../videogui/mainwindow.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtGui/qtouchdevice.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qtabwidget.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtGui/qicon.h \
-		ui_mainwindow.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/QMediaPlayer \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmediaplayer.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmediaobject.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qtmultimediaglobal.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qtmultimedia-config.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmultimedia.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmediacontent.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmediaresource.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtNetwork/qnetworkrequest.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtNetwork/qtnetworkglobal.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtNetwork/qtnetwork-config.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/QSharedDataPointer \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/QString \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/QUrl \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/QVariant \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmediaenumdebug.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/qmetaobject.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qaudio.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtNetwork/qnetworkconfiguration.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimediaWidgets/QVideoWidget \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimediaWidgets/qvideowidget.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimediaWidgets/qtmultimediawidgetdefs.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtMultimedia/qmediabindableinterface.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/QFileDialog \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qfiledialog.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/qdir.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/qfileinfo.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qdialog.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/QProgressBar \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qprogressbar.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qframe.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/QSlider \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qslider.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qabstractslider.h \
+		ui_mainwindow.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/QAction \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qaction.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qactiongroup.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/QApplication \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qapplication.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtCore/qcoreapplication.h \
@@ -482,11 +582,10 @@ release/mainwindow.o: ../videogui/mainwindow.cpp ../videogui/mainwindow.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qdesktopwidget.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtGui/qguiapplication.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtGui/qinputmethod.h \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/QMenu \
+		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qmenu.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/QMenuBar \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qmenubar.h \
-		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qmenu.h \
-		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qaction.h \
-		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qactiongroup.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/QStatusBar \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/qstatusbar.h \
 		C:/Qt/Qt5.12.3/5.12.3/mingw73_32/include/QtWidgets/QToolBar \
