@@ -2,6 +2,11 @@
 #define MAINWINDOW_H
 
 #include <QMainWindow>
+#include <QMediaPlayer>
+#include <QVideoWidget>
+#include <QFileDialog>
+#include <QProgressBar>
+#include <QSlider>
 
 namespace Ui {
 class MainWindow;
@@ -26,6 +31,13 @@ private slots:
 
 private:
     Ui::MainWindow *ui;
+    QMediaPlayer* player;
+    QVideoWidget* vw;
+    QProgressBar* bar;
+    QSlider* slider;
+
+
+
 };
 
 #endif // MAINWINDOW_H
